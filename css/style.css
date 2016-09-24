@@ -16,6 +16,37 @@
   top:-28px;
   left:-9px;
   background: url(../images/action.png) no-repeat;
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  -o-animation-duration:1s;
+   animation-duration:1s;
+  -webkit-animation-timing-function: easy;
+  -moz-animation-timing-function: easy;
+  -o-animation-timing-function: easy;
+   animation-timing-function: easy;
+}
+.action:hover{
+	-webkit-animation-name: tada;
+	-moz-animation-name:tada;
+	-o-animation-name:tada;
+	 animation-name:tada;
+}
+@-moz-keyframes tada{
+	0% {
+		-moz-transform:scale(1)
+	}
+	10%, 20%{
+		-moz-transform:scale(0.9) rotate(-3deg)
+	}
+	30%,50%,70%,90%{
+		-moz-transform:scale(1.1) rotate(3deg)
+	}
+	40%, 60%, 80%{
+		-moz-transform:scale(1.1) rotate(-3deg)
+	}
+	100%{
+		-moz-transform:scale(1) rotate(0)
+	}
 }
 .phone{
   background: #fff url(../images/big_phone.jpg) no-repeat;
